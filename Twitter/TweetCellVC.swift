@@ -44,28 +44,17 @@ class TweetCellVC: UITableViewCell {
                 print("Something went wrong with favorites")
             })
         }
-        
-        
-        
-        
     }
     
     
-    
-    
-    
     @IBAction func retweetButton(_ sender: Any) {
-        
         TwitterAPICaller.client?.reTweets(tweetID: ttweetID, success: {
             self.setRetweeted(true)
         }, failure: { (error) in
             print(error.localizedDescription)
         })
-        
-        
     }
    
-    
     
     func setRetweeted (_ isRetweeted:Bool){
         if (isRetweeted){

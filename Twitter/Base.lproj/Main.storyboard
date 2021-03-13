@@ -145,7 +145,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Tweet" id="jvJ-ri-rwf">
                             <color key="tintColor" systemColor="systemGray6Color"/>
                             <connections>
-                                <segue destination="WaH-cx-gts" kind="presentation" id="jeV-sl-ese"/>
+                                <segue destination="WaH-cx-gts" kind="presentation" modalPresentationStyle="fullScreen" id="jeV-sl-ese"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -159,11 +159,11 @@
             <objects>
                 <viewController id="Da4-Xx-ymx" customClass="TweetVC" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iHp-kT-Owq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WgO-w3-SHi">
-                                <rect key="frame" x="0.0" y="56" width="414" height="128"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="JXD-Kv-hf0"/>
@@ -230,7 +230,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="G9P-x8-ljq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IX5-e0-kpL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.3388725964" green="0.88901538479999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>

@@ -66,7 +66,7 @@ class TwitterAPICaller: BDBOAuth1SessionManager {
     
     func postTweets(tweetString: String, success: @escaping () -> (), failure: @escaping (Error) -> ()){
         let url = "https://api.twitter.com/1.1/statuses/update.json"
-        TwitterAPICaller.client?.get(url, parameters: ["status":tweetString], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+        TwitterAPICaller.client?.post(url, parameters: ["status":tweetString], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
             success()
         }, failure: { (task: URLSessionDataTask?, error: Error) in
             failure(error)
@@ -77,7 +77,7 @@ class TwitterAPICaller: BDBOAuth1SessionManager {
     
     func favoriteTweets(tweetID: Int, success: @escaping () -> (), failure: @escaping (Error) -> ()){
         let url = "https://api.twitter.com/1.1/favorites/create.json"
-        TwitterAPICaller.client?.get(url, parameters: ["id":tweetID], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+        TwitterAPICaller.client?.post(url, parameters: ["id":tweetID], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
             success()
         }, failure: { (task: URLSessionDataTask?, error: Error) in
             failure(error)
@@ -86,7 +86,7 @@ class TwitterAPICaller: BDBOAuth1SessionManager {
     
     func unfavoriteTweets(tweetID: Int, success: @escaping () -> (), failure: @escaping (Error) -> ()){
         let url = "https://api.twitter.com/1.1/favorites/destroy.json"
-        TwitterAPICaller.client?.get(url, parameters: ["id":tweetID], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+        TwitterAPICaller.client?.post(url, parameters: ["id":tweetID], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
             success()
         }, failure: { (task: URLSessionDataTask?, error: Error) in
             failure(error)
@@ -95,7 +95,7 @@ class TwitterAPICaller: BDBOAuth1SessionManager {
 
     func reTweets(tweetID: Int, success: @escaping () -> (), failure: @escaping (Error) -> ()){
         let url = "https://api.twitter.com/1.1/statuses/retweet/\(tweetID).json"
-        TwitterAPICaller.client?.get(url, parameters: ["id":tweetID], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
+        TwitterAPICaller.client?.post(url, parameters: ["id":tweetID], progress: nil, success: { (task: URLSessionDataTask, response: Any?) in
             success()
         }, failure: { (task: URLSessionDataTask?, error: Error) in
             failure(error)
