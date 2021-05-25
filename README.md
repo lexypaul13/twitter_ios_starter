@@ -1,15 +1,14 @@
-Twitter Clone
-**Name of your app** is a basic twitter app to read your tweets.
+#Simple Twitter Clone
+Simple twitter clone is an app that connect to twitters APi that performs the following listed below:
 
-Time spent: **X** hours spent in total
+Features:
+User Login/Logout
+Displays user profile picture, username, and tweet text.
+Composition of tweets 
+Liking of tweets
+Retweeting of tweets.
 
-## User Stories
 
-The following **required** functionality is completed:
-
-- [ ] User sees app icon in home screen and styled launch screen. (1pt)
-- [ ] User can log in. (1pt)
-- [ ] User can log out. (1pt)
-- [ ] User stays logged in across restarts. (1pt)
-- [ ] User can view tweets with the user profile picture, username, and tweet text. (6pts)
-
+Frameworks:
+TwitterAPICaller
+Parse
