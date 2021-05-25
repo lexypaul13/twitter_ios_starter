@@ -1,14 +1,17 @@
-Simple Twitter Clone:
-Simple twitter clone is an app that connect to twitters APi that performs the following listed below:
+# Twitter Clone
+
+Twitter clone is an app that connects to twitters API that performs the following features listed below:
 
 Features:
-User Login/Logout
-Displays user profile picture, username, and tweet text.
-Composition of tweets 
-Liking of tweets
-Retweeting of tweets.
-
+* User Login/Logout
+* Displays user profile picture, username, and tweet text.
+* Composition of tweets 
+* Liking of tweets
+* Retweeting of tweets.
+* Post tweets
 
 Frameworks:
-TwitterAPICaller
-Parse
+* TwitterAPICaller
+* Parse
+ 
+
